@@ -9,7 +9,7 @@ else
    HASH=`curl -sS https://composer.github.io/installer.sig`
    sudo php /tmp/composer-setup.php --install-dir=/usr/local/bin --filename=composer
    sudo apt install npm -y 
-   npm install
+   sudo npm install
     
 
 fi

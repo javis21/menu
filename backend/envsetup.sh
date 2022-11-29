@@ -14,7 +14,7 @@ fi
 source env/bin/activate
 sudo apt-get -y install python3-pip
 
-pip3 install -r requirements.txt
+sudo pip3 install -r requirements.txt
 
 if [ -d "logs" ] 
 then

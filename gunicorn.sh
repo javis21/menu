@@ -2,7 +2,7 @@
 
 source env/bin/activate
 
-cd /var/lib/jenkins/workspace/menu/backend
+cd /var/lib/jenkins/workspace/menu
 
 
 

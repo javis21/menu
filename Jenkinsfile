@@ -6,8 +6,8 @@ pipeline{
        
       steps  {
             sh '''
-            chmod +x ./backend/envsetup.sh
-            ./backend/envsetup.sh
+            chmod +x envsetup.sh
+            ./envsetup.sh
             '''}
         }
          stage('Setup react  ENV'){
@@ -21,16 +21,16 @@ pipeline{
         stage('Setup Gunicorn Setup'){
             steps {
                 sh '''
-                chmod +x ./backend/gunicorn.sh
-                ./backend/gunicorn.sh
+                chmod +x gunicorn.sh
+                ./gunicorn.sh
                 '''
             }
         }
         stage('setup NGINX'){
             steps {
                 sh '''
-                chmod +x ./backend/nginx.sh
-                ./backend/nginx.sh
+                chmod +x nginx.sh
+                ./nginx.sh
                 '''
             }
         }
